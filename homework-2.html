@@ -2,6 +2,38 @@
 
     <head>
         <title>Homework 2</title>
+        <style>
+            .container {
+                width: 500px;
+                margin: 30px auto;
+            }
+
+            label {
+                display: block;
+
+                font-size: 18px;
+                margin-bottom: 2px;
+            }
+
+            .inputText {
+                width: 100%;
+                padding: 4px;
+                outline: none;
+                margin-bottom: 8px;
+            }
+
+            .inputText:focus {
+                border-color: midnightblue;
+            }
+
+            button {
+                width: 100%;
+                height: 40px;
+                background-color: lightgreen;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        </style>
     </head>
 
     <body>
@@ -10,16 +42,16 @@
                 <fieldset>
                     <legend>Contact details</legend>
                     <label for="firstName">First name</label>
-                    <input id="firstName" name="firstName" type="text" placeholder="First name">
+                    <input id="firstName" class="inputText" name="firstName" type="text" placeholder="First name">
 
                     <label for="lastName">Last name</label>
-                    <input id="lastName" name="lastName" type="text" placeholder="Last name">
+                    <input id="lastName" class="inputText" name="lastName" type="text" placeholder="Last name">
 
                     <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="abc@xyz.com">
+                    <input id="email" class="inputText" name="email" type="email" placeholder="abc@xyz.com">
 
                     <label for="phone">Phone</label>
-                    <input id="phone" name="phone" type="tel" placeholder="+40 0000 000 000">
+                    <input id="phone" class="inputText" name="phone" type="tel" placeholder="+40 0000 000 000">
                 </fieldset>
                 <fieldset>
                     <legend>Choose a movie</legend>
