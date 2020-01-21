@@ -1,0 +1,76 @@
+<html>
+
+    <head>
+        <title>Flex box</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                background-color: black;
+
+            }
+
+            .container {
+                /* border: 1px solid royalblue; */
+                margin: auto;
+                width: 1000px;
+                height: 602px;
+
+
+            }
+
+
+            .head {
+                background-color: rgb(0, 76, 98);
+                height: 40px;
+                width: 100%;
+
+            }
+
+            .main {
+                display: flex;
+
+            }
+
+            .green {
+                flex-grow: 1;
+                background-color: rgb(21, 90, 62);
+                height: 500px;
+
+            }
+
+            .grey {
+                flex-grow: 3;
+                background-color: rgb(226, 203, 187);
+                height: 500px;
+
+            }
+
+            .red {
+                flex-grow: 1;
+                background-color: rgb(255, 107, 87);
+                height: 500px;
+
+            }
+
+            .footnot {
+                background-color: rgb(238, 169, 78);
+                height: 40px;
+                width: 100%;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="head"></div>
+            <div class="main">
+                <div class="green "></div>
+                <div class="grey"></div>
+                <div class="red"></div>
+            </div>
+            <div class="footnot"></div>
+        </div>
+    </body>
+
+</html>
