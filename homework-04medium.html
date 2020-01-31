@@ -1,0 +1,53 @@
+<html>
+
+    <head>
+        <title>Transition medium</title>
+        <style>
+            body {
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+
+            .box {
+                display: flex;
+                background-color: #ffffff;
+                width: 400px;
+                height: 400px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                width: 300px;
+                height: 300px;
+                justify-content: center;
+                align-items: center;
+                animation: heart 1s ease-in-out 0.5s infinite;
+                background-color: #ffffff;
+            }
+
+            @keyframes heart {
+                from {
+                    width: 300px;
+                    height: 300px;
+                }
+
+                to {
+                    width: 380px;
+                    height: 380px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png"
+                alt="heart" />
+        </div>
+
+    </body>
+
+</html>
