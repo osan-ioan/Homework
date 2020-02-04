@@ -1,0 +1,35 @@
+<html>
+
+    <head>
+        <title>Greetings</title>
+    </head>
+
+    <body>
+
+        <script>
+            function greetings() {
+
+                var t = new Date();
+
+                console.log(t);
+
+                var d = new Date().getHours();
+
+                if (d < 12) {
+                    document.write("Good morning!");
+                    console.log(d);
+                }
+                else if (d >= 12 && d < 18) {
+                    document.write("Good afternoon !");
+                    console.log(d);
+                }
+                else {
+                    document.write("Good evening !");
+                    console.log(d);
+                }
+            }
+            greetings();
+        </script>
+    </body>
+
+</html>
