@@ -1,0 +1,42 @@
+<html>
+
+    <head>
+        <title>Random function in array</title>
+        <script>
+            var firstName = ['John', 'Matthew', 'Thomas', 'Christian', 'David'];
+            var lastName = ['Smith', 'Pitt', 'Cruise', 'Robinson'];
+
+            /*  function randomFirstName() {
+                  var randomName = Math.random();
+                  return indexName = Math.floor(randomName * 5);
+              }
+              // console.log("", firstName[randomFirstName()]);
+  
+              function randomLasttName() {
+                  var randomName = Math.random();
+                  return indexName = Math.floor(randomName * 4);
+              }
+              // console.log("", lastName[randomLasttName()]);
+  
+              var name = firstName[randomFirstName()].concat(" " + lastName[randomLasttName()]);
+              console.log("name ", name);*/
+
+            randomFirstName = () => {
+                var randomFName = Math.floor(Math.random() * 5);
+                return randomFName; 
+
+            }
+            // console.log("", firstName[randomFirstName()]);
+
+            randomLastName = () => {
+                var randomLName = Math.floor(Math.random() * 4);
+                return randomLName;
+            }
+            // console.log("", lastName[randomLastName()]);
+
+            var name = firstName[randomFirstName()].concat(" " + lastName[randomLastName()]);
+            console.log("name ", name);
+        </script>
+    </head>
+
+</html>

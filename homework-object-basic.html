@@ -1,0 +1,18 @@
+<html>
+
+    <head>
+        <title>Objects basic</title>
+        <script>
+            var animal = {
+                type: "Dog",
+                name: "Rex",
+                gut: ["Meat", "Bones", "Milk", "Bread"],
+                eat: function (food) {
+                    return this.type + " " + this.name + " eat " + this.gut[0];
+                }
+            }
+            console.log(animal.eat());
+        </script>
+    </head>
+
+</html>

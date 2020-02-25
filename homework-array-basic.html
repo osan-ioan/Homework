@@ -1,0 +1,19 @@
+<html>
+
+    <head>
+        <title>Add positiv numbvers</title>
+        <script>
+            var array = [-2, 10, 2, 4, -6, 3, -4, 7];
+
+            var positivNumberSum = array.reduce(function (accumulator, element) {
+                if (element > 0) {
+                    return accumulator + element;
+
+                }
+                return accumulator;
+            }, 0);
+            console.log("positivNumberSum", positivNumberSum);
+        </script>
+    </head>
+
+</html>
